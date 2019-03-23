@@ -11,5 +11,18 @@
   justify-content: center;
 }
 
+.button(@color; @radius) {
+  font-size: 1.8rem;
+  background-color: @header-font-color;
+  color: @color;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: @radius;
+  margin-top: 0;
+  display: inline-block;
 
-
+  &:hover {
+    background-color: lighten(@header-font-color; 20%);
+    color: yellow;
+  }
+}
