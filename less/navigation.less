@@ -1,1 +1,36 @@
 // Navigation code here
+
+nav {
+  background-color: @nav-bg;
+  height: 100px;
+  .flex-center();
+  border-bottom: 1px solid @nav-border;
+
+  div {
+    .flex-center();
+    width: 800px;
+    flex-direction: column;
+    margin: auto;
+
+
+    h1 {
+      .site-name();
+    }
+
+    div {
+      width: 48%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+
+      a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: @main-font-color;
+      }
+    }
+
+  }
+
+}
