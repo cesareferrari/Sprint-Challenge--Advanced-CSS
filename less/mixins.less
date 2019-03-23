@@ -11,15 +11,18 @@
   justify-content: center;
 }
 
-.button(@color; @radius) {
+.button(@width; @height) {
+  .flex-center();
+  width: @width;
+  height: @height;
+
   font-size: 1.8rem;
   background-color: @header-font-color;
-  color: @color;
+  color: white;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: @radius;
+  border-radius: 10px;
   margin-top: 0;
-  display: inline-block;
 
   &:hover {
     background-color: lighten(@header-font-color; 20%);

@@ -83,8 +83,13 @@
 
       .btn {
         a {
-          .button(white; 8px);
+          .button(50%; 40px);
+
+          @media @phone {
+            .button(100%; 80px);
+          }
         }
+
       }
 
       @media @phone {
