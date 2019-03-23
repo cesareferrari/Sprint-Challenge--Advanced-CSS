@@ -15,6 +15,11 @@ nav {
 
     h1 {
       .site-name();
+
+      @media @phone {
+        margin-bottom: 20px;
+
+      }
     }
 
     div {
@@ -23,9 +28,13 @@ nav {
       flex-direction: row;
       justify-content: space-between;
 
+      @media @phone {
+        width: 80%;
+      }
+
 
       a {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         text-decoration: none;
         color: @main-font-color;
       }

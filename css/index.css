@@ -189,14 +189,24 @@ nav div h1 {
   font-size: 4rem;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  nav div h1 {
+    margin-bottom: 20px;
+  }
+}
 nav div div {
   width: 48%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  nav div div {
+    width: 80%;
+  }
+}
 nav div div a {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   text-decoration: none;
   color: #5E6164;
 }
