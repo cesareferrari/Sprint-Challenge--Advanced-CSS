@@ -1,6 +1,7 @@
 .site-name {
   font-size: 4rem;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .flex-center {
   display: flex;
@@ -177,6 +178,11 @@ nav {
   justify-content: center;
   border-bottom: 1px solid #F1F1F1;
 }
+@media (max-width: 500px) {
+  nav {
+    padding-bottom: 20px;
+  }
+}
 nav div {
   display: flex;
   align-items: center;
@@ -187,28 +193,29 @@ nav div {
 }
 nav div h1 {
   font-size: 4rem;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (max-width: 500px) {
   nav div h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 nav div div {
-  width: 48%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  nav div div {
-    width: 80%;
-  }
+  display: block;
+  text-align: center;
 }
 nav div div a {
+  display: inline-block;
   font-size: 1.7rem;
   text-decoration: none;
   color: #5E6164;
+  padding: 10px 13px;
+}
+nav div div a:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 1s;
 }
 footer {
   color: #22283B;
