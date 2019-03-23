@@ -25,6 +25,10 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      padding: 20px;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -39,6 +43,7 @@
 
       img {
         width: 100%;
+        margin: 0;
       }
     }
 
@@ -83,10 +88,10 @@
 
       .btn {
         a {
-          .button(50%; 40px);
+          .button(40%; 40px);
 
           @media @phone {
-            .button(100%; 80px);
+            .button(100%; 70px);
           }
         }
 
