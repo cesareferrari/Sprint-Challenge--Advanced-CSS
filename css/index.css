@@ -267,6 +267,13 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -290,12 +297,30 @@ footer {
   background-color: #49557b;
   color: yellow;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: 1;
+  }
 }

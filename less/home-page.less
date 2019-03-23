@@ -64,6 +64,12 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -80,16 +86,31 @@
           .button(white; 8px);
         }
       }
+
+      @media @phone {
+        order: 2;
+        width: 100%;
+        margin-top: 30px;
+      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone {
+        order: 1;
       }
     }
   }
