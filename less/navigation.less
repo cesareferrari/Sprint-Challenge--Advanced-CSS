@@ -1,1 +1,51 @@
 // Navigation code here
+
+nav {
+  background-color: @nav-bg;
+  height: 100px;
+  .flex-center();
+  border-bottom: 1px solid @nav-border;
+
+  @media @phone {
+    padding-bottom: 20px;
+  }
+
+  div {
+    .flex-center();
+    width: 800px;
+    flex-direction: column;
+    margin: auto;
+
+
+    h1 {
+      .site-name();
+
+      @media @phone {
+        margin-bottom: 10px;
+      }
+    }
+
+    div {
+      display: block;
+      text-align: center;
+
+
+
+      a {
+        display: inline-block;
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: @main-font-color;
+        padding: 10px 13px;
+
+        &:hover {
+          background-color: black;
+          color: white;
+          transition: background-color 1s;
+        }
+      }
+    }
+
+  }
+
+}

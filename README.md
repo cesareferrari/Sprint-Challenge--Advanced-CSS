@@ -34,13 +34,52 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    Adaptive websites introduce media queries to provide different fixed layouts for
+    different breakpoints. Layout widths are still hard coded in pixels but these
+    widths are adapted to some specific devices, like desktop, phone and tablet.  
+    They are not fluid layouts, in the sense that they don't adapt continuously to
+    the screen size, but they are fixed layouts designed for specific device sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first means the layout is styled for a small mobile device first and
+    progressively enhanced for when the screen becomes larger.   
+    It uses `min-width` media queries that are targeted to larger and larger
+    screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It aligns the rem size to the pixel size so `1.0rem` is equal to `10px`, or
+    `1.8rem` is equal to `18px`. So, it's easier to calculate the font sizes
+    while writing CSS.
+
+    The reason why we use 62.5% is because `1rem` (root em) equals the font size
+    of the `html` element (which is the root of the document), which is `16 pixels`
+    by default for most browsers.  
+    If we divide 16 by 62.5% we get 10. So, we are effectively setting the root
+    font size to be 10px, which makes it easy for further calculating font sizes on
+    the page.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing is a way to use variables, mixins, nesting and functions in CSS. These are
+    functionalities that CSS doesn't yet have, but they are useful to speed up CSS
+    code creation, avoid repetition and to control specificity better.  
+    A preprocessing language like LESS provides a super-set of syntax that gets
+    compiled back into a regular CSS file that is linked to the HTML file in the usual way.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is mixins, because lets me write code once and use it many
+    times. Sometimes I have a little trouble with nesting, because it may be a
+    little difficult to visualize how elements are nested by looking at the brackets
+    and indentation. To me, nesting elements by writing their class names seems more
+    clear, although it's more repetitive.
+
+
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

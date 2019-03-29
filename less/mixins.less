@@ -1,1 +1,32 @@
 // Mixins Here
+
+.site-name {
+  font-size: 4rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button(@width; @height) {
+  .flex-center();
+  width: @width;
+  height: @height;
+
+  font-size: 1.8rem;
+  background-color: @header-font-color;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 0;
+
+  &:hover {
+    background-color: lighten(@header-font-color; 20%);
+    color: yellow;
+  }
+}
